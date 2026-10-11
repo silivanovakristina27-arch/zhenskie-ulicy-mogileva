@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a60ef8560b018b980fcaa097c1fcc1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a60ef8560b018b980fcaa097c1fcc1b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a60ef8560b018b980fcaa097c1fcc1b = L.map(
+                "map_1a60ef8560b018b980fcaa097c1fcc1b",
+                {
+                    center: [53.93, 30.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbb8452c3b1c2624faa6803e2af9ab17 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dbb8452c3b1c2624faa6803e2af9ab17.addTo(map_1a60ef8560b018b980fcaa097c1fcc1b);
+        
+    
+            var marker_cluster_2857cc55771827c41452f7f75d91a5bb = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e4a275ab0a2a983a3e808d228a0346c7 = L.marker(
+                [53.88686, 30.39389],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_81f4816a31653fa55ed5e18ef9ba5fdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bd4666998e21fd378e8972a6c3f3c0e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0399daa94f3fda2f300df7c7ffd73a01 = $(`<div id="html_0399daa94f3fda2f300df7c7ffd73a01" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Софьи Ковалевской</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Софья Васильевна Ковалевская (1850–1891) — первая в мире женщина — профессор математики, первая женщина-академик Петербургской АН. Автор трудов по математическому анализу и механике.         </p>     </div>     </div>`)[0];
+                popup_2bd4666998e21fd378e8972a6c3f3c0e.setContent(html_0399daa94f3fda2f300df7c7ffd73a01);
+            
+        
+
+        marker_e4a275ab0a2a983a3e808d228a0346c7.bindPopup(popup_2bd4666998e21fd378e8972a6c3f3c0e)
+        ;
+
+        
+    
+    
+            marker_e4a275ab0a2a983a3e808d228a0346c7.bindTooltip(
+                `<div>
+                     ул. Софьи Ковалевской
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4a275ab0a2a983a3e808d228a0346c7.setIcon(icon_81f4816a31653fa55ed5e18ef9ba5fdd);
+            
+    
+            var marker_ad2cd17878affb77a939e210c5ae91f4 = L.marker(
+                [53.87375, 30.34764],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_f3ec98c0b58e7a5bf5ff5163810fc0b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5990fbf2bfb8418d174df074210e9e1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ebfbb87cc66440cbaa180115d4d1a47b = $(`<div id="html_ebfbb87cc66440cbaa180115d4d1a47b" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Зои Космодемьянской</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Зоя Анатольевна Космодемьянская (1923–1941) — юная партизанка, Герой Советского Союза (посмертно). Казнена фашистами в 1941 году. Её имя стало символом стойкости и патриотизма.         </p>     </div>     </div>`)[0];
+                popup_d5990fbf2bfb8418d174df074210e9e1.setContent(html_ebfbb87cc66440cbaa180115d4d1a47b);
+            
+        
+
+        marker_ad2cd17878affb77a939e210c5ae91f4.bindPopup(popup_d5990fbf2bfb8418d174df074210e9e1)
+        ;
+
+        
+    
+    
+            marker_ad2cd17878affb77a939e210c5ae91f4.bindTooltip(
+                `<div>
+                     ул. Зои Космодемьянской
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad2cd17878affb77a939e210c5ae91f4.setIcon(icon_f3ec98c0b58e7a5bf5ff5163810fc0b1);
+            
+    
+            var marker_a647299a0960a6c41915f79be81339dd = L.marker(
+                [53.9, 30.338],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_57375073a68901c64a2a12ca9fa6f90e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7451f2eeab31fa283d01e72a665b59cf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1b6956ebe231abe844de027309f15db1 = $(`<div id="html_1b6956ebe231abe844de027309f15db1" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Надежды Крупской (Могилёв)</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Надежда Константиновна Крупская (1869–1939) — жена и соратница Владимира Ленина, деятельница советского образования. Улица носит её имя с 1952 года (бывшая Первомайская).         </p>     </div>     </div>`)[0];
+                popup_7451f2eeab31fa283d01e72a665b59cf.setContent(html_1b6956ebe231abe844de027309f15db1);
+            
+        
+
+        marker_a647299a0960a6c41915f79be81339dd.bindPopup(popup_7451f2eeab31fa283d01e72a665b59cf)
+        ;
+
+        
+    
+    
+            marker_a647299a0960a6c41915f79be81339dd.bindTooltip(
+                `<div>
+                     ул. Надежды Крупской (Могилёв)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a647299a0960a6c41915f79be81339dd.setIcon(icon_57375073a68901c64a2a12ca9fa6f90e);
+            
+    
+            var marker_49ff4a4b37e6812f414a88d6c5a4dfc3 = L.marker(
+                [53.90747, 30.31064],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_9199100361fcd9f4bf0f1a0a782c6742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dbcda0942522e47163af02b15657e43 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_93d8db0a45c3bd1b9c198b78b09415c5 = $(`<div id="html_93d8db0a45c3bd1b9c198b78b09415c5" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">пер. Веры Ломако</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Вера Ломако — лётчица, кавалер ордена Ленина, участница уникального женского перелёта 1938 года.         </p>     </div>     </div>`)[0];
+                popup_8dbcda0942522e47163af02b15657e43.setContent(html_93d8db0a45c3bd1b9c198b78b09415c5);
+            
+        
+
+        marker_49ff4a4b37e6812f414a88d6c5a4dfc3.bindPopup(popup_8dbcda0942522e47163af02b15657e43)
+        ;
+
+        
+    
+    
+            marker_49ff4a4b37e6812f414a88d6c5a4dfc3.bindTooltip(
+                `<div>
+                     пер. Веры Ломако
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49ff4a4b37e6812f414a88d6c5a4dfc3.setIcon(icon_9199100361fcd9f4bf0f1a0a782c6742);
+            
+    
+            var marker_0bffd5747243d3dee6455dff4e8e53ec = L.marker(
+                [53.90492, 30.30808],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_92ff380807a5da80ba94648ce5e84486 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36f4cdedd991442c4950e9615c69f4d7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fc50803b984ad038560c4308e97f8f9e = $(`<div id="html_fc50803b984ad038560c4308e97f8f9e" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Марины Расковой</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Марина Михайловна Раскова (1912–1943) — лётчица-штурман, Герой Советского Союза, командир женского авиаполка.         </p>     </div>     </div>`)[0];
+                popup_36f4cdedd991442c4950e9615c69f4d7.setContent(html_fc50803b984ad038560c4308e97f8f9e);
+            
+        
+
+        marker_0bffd5747243d3dee6455dff4e8e53ec.bindPopup(popup_36f4cdedd991442c4950e9615c69f4d7)
+        ;
+
+        
+    
+    
+            marker_0bffd5747243d3dee6455dff4e8e53ec.bindTooltip(
+                `<div>
+                     ул. Марины Расковой
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bffd5747243d3dee6455dff4e8e53ec.setIcon(icon_92ff380807a5da80ba94648ce5e84486);
+            
+    
+            var marker_c622b980b290631377ba483f4bfdeaa3 = L.marker(
+                [53.93742, 30.35224],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_c1d1b260fbac3a293aa03bf304db7590 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91b52698e6524cab65b6860e783cdc97 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_969ebf65d17e237f3e2dbef3b784dcdf = $(`<div id="html_969ebf65d17e237f3e2dbef3b784dcdf" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Полины Осипенко</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Полина Денисовна Осипенко (1907–1939) — лётчица, Герой Советского Союза, участница знаменитых женских перелётов.         </p>     </div>     </div>`)[0];
+                popup_91b52698e6524cab65b6860e783cdc97.setContent(html_969ebf65d17e237f3e2dbef3b784dcdf);
+            
+        
+
+        marker_c622b980b290631377ba483f4bfdeaa3.bindPopup(popup_91b52698e6524cab65b6860e783cdc97)
+        ;
+
+        
+    
+    
+            marker_c622b980b290631377ba483f4bfdeaa3.bindTooltip(
+                `<div>
+                     ул. Полины Осипенко
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c622b980b290631377ba483f4bfdeaa3.setIcon(icon_c1d1b260fbac3a293aa03bf304db7590);
+            
+    
+            var marker_48c96d4115945b1875d7191b7f65ba73 = L.marker(
+                [53.90361, 30.33276],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_7857c832976df3258cc969d73a520853 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3261d743c86da55d5ef134e6560b7c6e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d06f96195e525fc5b6b8f8095cf38516 = $(`<div id="html_d06f96195e525fc5b6b8f8095cf38516" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">пер. Тани Карпинской</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Таня Карпинская — местная подпольщица, её именем назван переулок в центре города.         </p>     </div>     </div>`)[0];
+                popup_3261d743c86da55d5ef134e6560b7c6e.setContent(html_d06f96195e525fc5b6b8f8095cf38516);
+            
+        
+
+        marker_48c96d4115945b1875d7191b7f65ba73.bindPopup(popup_3261d743c86da55d5ef134e6560b7c6e)
+        ;
+
+        
+    
+    
+            marker_48c96d4115945b1875d7191b7f65ba73.bindTooltip(
+                `<div>
+                     пер. Тани Карпинской
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48c96d4115945b1875d7191b7f65ba73.setIcon(icon_7857c832976df3258cc969d73a520853);
+            
+    
+            var marker_8e26fb76463964c5e6f7973a9f11a1c7 = L.marker(
+                [53.86053, 30.31344],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_e380cd3c10b7108aa74da67b5382a24b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b75e5bcc8991d89d246617ad60cc40e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_26d5d0b0afac6d75aeb1d3929cecde8b = $(`<div id="html_26d5d0b0afac6d75aeb1d3929cecde8b" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Лизы Чайкиной</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Лиза Чайкина — партизанка, Герой Советского Союза, погибла в 23 года. В Могилёве её именем названо 14 топонимов.         </p>     </div>     </div>`)[0];
+                popup_7b75e5bcc8991d89d246617ad60cc40e.setContent(html_26d5d0b0afac6d75aeb1d3929cecde8b);
+            
+        
+
+        marker_8e26fb76463964c5e6f7973a9f11a1c7.bindPopup(popup_7b75e5bcc8991d89d246617ad60cc40e)
+        ;
+
+        
+    
+    
+            marker_8e26fb76463964c5e6f7973a9f11a1c7.bindTooltip(
+                `<div>
+                     ул. Лизы Чайкиной
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e26fb76463964c5e6f7973a9f11a1c7.setIcon(icon_e380cd3c10b7108aa74da67b5382a24b);
+            
+    
+            var marker_5eba42687ede6217afc83a2839532e3e = L.marker(
+                [53.895, 30.325],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_dd634fc7d7ee79e43d34aa9eb6a28789 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_541659e748a631392eba453a8a5e910d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e92ad2457c7a6526e77620b12e729c01 = $(`<div id="html_e92ad2457c7a6526e77620b12e729c01" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Клары Цеткин</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Клара Цеткин (1857–1933) — немецкая революционерка, одна из основательниц Международного женского дня.         </p>     </div>     </div>`)[0];
+                popup_541659e748a631392eba453a8a5e910d.setContent(html_e92ad2457c7a6526e77620b12e729c01);
+            
+        
+
+        marker_5eba42687ede6217afc83a2839532e3e.bindPopup(popup_541659e748a631392eba453a8a5e910d)
+        ;
+
+        
+    
+    
+            marker_5eba42687ede6217afc83a2839532e3e.bindTooltip(
+                `<div>
+                     ул. Клары Цеткин
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5eba42687ede6217afc83a2839532e3e.setIcon(icon_dd634fc7d7ee79e43d34aa9eb6a28789);
+            
+    
+            var marker_c7b7672259e48416e203dd2e2a8beefd = L.marker(
+                [53.897, 30.326],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_a290ab3e8987e0d3d599a7f9143ba173 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a63f65b768808441f319177cf33c665f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ccb845a9cb32bfd410c46c650df198af = $(`<div id="html_ccb845a9cb32bfd410c46c650df198af" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Розы Люксембург</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Роза Люксембург (1871–1919) — деятельница польского и германского рабочего движения.         </p>     </div>     </div>`)[0];
+                popup_a63f65b768808441f319177cf33c665f.setContent(html_ccb845a9cb32bfd410c46c650df198af);
+            
+        
+
+        marker_c7b7672259e48416e203dd2e2a8beefd.bindPopup(popup_a63f65b768808441f319177cf33c665f)
+        ;
+
+        
+    
+    
+            marker_c7b7672259e48416e203dd2e2a8beefd.bindTooltip(
+                `<div>
+                     ул. Розы Люксембург
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7b7672259e48416e203dd2e2a8beefd.setIcon(icon_a290ab3e8987e0d3d599a7f9143ba173);
+            
+    
+            var marker_f72cf98393587e891fd511e304fd2ced = L.marker(
+                [53.902, 30.33],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_3231a202328537942eaa955d57ac0f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d2541a41395f1f9d3ba8f77735fa155 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_70fb5d7a80ea48e06be302b82c8e1f13 = $(`<div id="html_70fb5d7a80ea48e06be302b82c8e1f13" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Лидии Езерской</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Лидия Павловна Езерская (1866–?) — могилевская дворянка, покушавшаяся на губернатора в 1905 году, умерла в ссылке.         </p>     </div>     </div>`)[0];
+                popup_5d2541a41395f1f9d3ba8f77735fa155.setContent(html_70fb5d7a80ea48e06be302b82c8e1f13);
+            
+        
+
+        marker_f72cf98393587e891fd511e304fd2ced.bindPopup(popup_5d2541a41395f1f9d3ba8f77735fa155)
+        ;
+
+        
+    
+    
+            marker_f72cf98393587e891fd511e304fd2ced.bindTooltip(
+                `<div>
+                     ул. Лидии Езерской
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f72cf98393587e891fd511e304fd2ced.setIcon(icon_3231a202328537942eaa955d57ac0f00);
+            
+    
+            var marker_b4f4d5ef6b6adf25a3ae5678009244cb = L.marker(
+                [53.90195, 30.35575],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_84f58cbbfac8e92259dd15b07bb62a98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7248100ff77af1a5cb6e4cbda4e03e0a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1d5cd3c2f285586c4fe0fedce971b79f = $(`<div id="html_1d5cd3c2f285586c4fe0fedce971b79f" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Наталинская</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Наталинская — улица с «поэтичным» женским именем, название образовано от женского имени Наталья.         </p>     </div>     </div>`)[0];
+                popup_7248100ff77af1a5cb6e4cbda4e03e0a.setContent(html_1d5cd3c2f285586c4fe0fedce971b79f);
+            
+        
+
+        marker_b4f4d5ef6b6adf25a3ae5678009244cb.bindPopup(popup_7248100ff77af1a5cb6e4cbda4e03e0a)
+        ;
+
+        
+    
+    
+            marker_b4f4d5ef6b6adf25a3ae5678009244cb.bindTooltip(
+                `<div>
+                     ул. Наталинская
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4f4d5ef6b6adf25a3ae5678009244cb.setIcon(icon_84f58cbbfac8e92259dd15b07bb62a98);
+            
+    
+            var marker_dda503a421a801c747f72746776835f7 = L.marker(
+                [54.014104, 31.730957],
+                {
+}
+            ).addTo(marker_cluster_2857cc55771827c41452f7f75d91a5bb);
+        
+    
+            var icon_6fa28b8e058f3b32f9d9b4c05be40dba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "female",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4282f7de566bc06a9ad72f3e9e126f3b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_45712d4922a762e468cdab5231c87255 = $(`<div id="html_45712d4922a762e468cdab5231c87255" style="width: 100.0%; height: 100.0%;">     <div style="width:320px; font-family:Arial, sans-serif;">         <h4 style="color:#c2185b; margin:5px 0;">ул. Крупской (Мстиславль)</h4>         <p style="font-size:12px; text-align:justify; margin:0;">             Надежда Константиновна Крупская (1869–1939) — жена и соратница Владимира Ленина, деятельница советского образования. В Мстиславле есть улица и парк её имени. Почтовый индекс улицы — 213453.         </p>     </div>     </div>`)[0];
+                popup_4282f7de566bc06a9ad72f3e9e126f3b.setContent(html_45712d4922a762e468cdab5231c87255);
+            
+        
+
+        marker_dda503a421a801c747f72746776835f7.bindPopup(popup_4282f7de566bc06a9ad72f3e9e126f3b)
+        ;
+
+        
+    
+    
+            marker_dda503a421a801c747f72746776835f7.bindTooltip(
+                `<div>
+                     ул. Крупской (Мстиславль)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dda503a421a801c747f72746776835f7.setIcon(icon_6fa28b8e058f3b32f9d9b4c05be40dba);
+            
+    
+            marker_cluster_2857cc55771827c41452f7f75d91a5bb.addTo(map_1a60ef8560b018b980fcaa097c1fcc1b);
+        
+    
+            var layer_control_69f26797b8681228825a677d283ed093_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dbb8452c3b1c2624faa6803e2af9ab17,
+                },
+                overlays :  {
+                    "\u0416\u0435\u043d\u0441\u043a\u0438\u0435 \u0443\u043b\u0438\u0446\u044b \u041c\u043e\u0433\u0438\u043b\u0451\u0432\u0449\u0438\u043d\u044b" : marker_cluster_2857cc55771827c41452f7f75d91a5bb,
+                },
+            };
+            let layer_control_69f26797b8681228825a677d283ed093 = L.control.layers(
+                layer_control_69f26797b8681228825a677d283ed093_layers.base_layers,
+                layer_control_69f26797b8681228825a677d283ed093_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_1a60ef8560b018b980fcaa097c1fcc1b);
+
+        
+    
+            tile_layer_dbb8452c3b1c2624faa6803e2af9ab17.addTo(map_1a60ef8560b018b980fcaa097c1fcc1b);
+        
+    
+                marker_e4a275ab0a2a983a3e808d228a0346c7.setIcon(icon_81f4816a31653fa55ed5e18ef9ba5fdd);
+            
+    
+                marker_ad2cd17878affb77a939e210c5ae91f4.setIcon(icon_f3ec98c0b58e7a5bf5ff5163810fc0b1);
+            
+    
+                marker_a647299a0960a6c41915f79be81339dd.setIcon(icon_57375073a68901c64a2a12ca9fa6f90e);
+            
+    
+                marker_49ff4a4b37e6812f414a88d6c5a4dfc3.setIcon(icon_9199100361fcd9f4bf0f1a0a782c6742);
+            
+    
+                marker_0bffd5747243d3dee6455dff4e8e53ec.setIcon(icon_92ff380807a5da80ba94648ce5e84486);
+            
+    
+                marker_c622b980b290631377ba483f4bfdeaa3.setIcon(icon_c1d1b260fbac3a293aa03bf304db7590);
+            
+    
+                marker_48c96d4115945b1875d7191b7f65ba73.setIcon(icon_7857c832976df3258cc969d73a520853);
+            
+    
+                marker_8e26fb76463964c5e6f7973a9f11a1c7.setIcon(icon_e380cd3c10b7108aa74da67b5382a24b);
+            
+    
+                marker_5eba42687ede6217afc83a2839532e3e.setIcon(icon_dd634fc7d7ee79e43d34aa9eb6a28789);
+            
+    
+                marker_c7b7672259e48416e203dd2e2a8beefd.setIcon(icon_a290ab3e8987e0d3d599a7f9143ba173);
+            
+    
+                marker_f72cf98393587e891fd511e304fd2ced.setIcon(icon_3231a202328537942eaa955d57ac0f00);
+            
+    
+                marker_b4f4d5ef6b6adf25a3ae5678009244cb.setIcon(icon_84f58cbbfac8e92259dd15b07bb62a98);
+            
+    
+                marker_dda503a421a801c747f72746776835f7.setIcon(icon_6fa28b8e058f3b32f9d9b4c05be40dba);
+            
+    
+            marker_cluster_2857cc55771827c41452f7f75d91a5bb.addTo(map_1a60ef8560b018b980fcaa097c1fcc1b);
+        
+</script>
+</html>
